@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>海丝之路</title>
+		<style type="text/css">
+		
+		
+		/*<script src="javascript">
+			window.onload = function() {
+				var bigImg = document.createElement("img"); 
+				bigImg.src = "OS(C:)/用户/k/文档/HBuilderProject/haisi/img.changeback.png";
+				bigImg.width="320";
+				var myp = document.getElementById('myp');
+				myp.appendChild(bigImg);
+
+			};	
+		</script>*/
+		
+		
+		/*body{
+			width: 600px ;
+			height:1024px;
+	    	background-image:url("img/changeback.png");
+      		background-repeat:no-repeat;
+      		background-size: 600px;
+      		overflow-y: auto;
+      	}*/
+		/*.kong{
+			width:600px;
+			height:600px;
+		}*/
+		/*.wenyang{
+			margin-top: 950px;
+			width:600px;
+		}
+		.jl{
+			cursor:pointer;
+			opacity: 0.5;
+		}
+		.hua{
+			cursor:pointer;
+			opacity: 0.5;
+			position:absolute;
+			top:145%;
+			left:10%
+		}
+		.xh{
+			cursor:pointer;
+			position:absolute;
+			top:145%;
+			left:20%
+		}
+		.xy{
+			cursor:pointer;
+			opacity: 0.5;
+			position:absolute;
+			top:145%;
+			left:30%
+		}*/
+	</style>
+	</head>
+	<body>
+		<script src="js/pixi.min.js"></script>
+    <script>
+		var app = new PIXI.Application(500,1024);
+        document.body.appendChild(app.view);
+        
+        var bg = new PIXI.Sprite.fromImage("img/changeback.png");
+        app.stage.addChild(bg);
+        //bg.width=500;
+        //bg.height=1024;
+        
+        /*bg.visible = true;
+        
+        bg.interactive = true;
+        bg.on("click", see);
+        function see(){
+        	bg.visible = false;
+        }*/
+        var hua = new PIXI.Sprite.fromImage("img/hua.png");
+        app.stage.addChild(hua);
+        //hua.width=150;
+        //hua.height=120;
+        hua.scale.x=0.03;
+        hua.scale.y=0.03;
+        hua.y=835;
+        
+        var jinli = new PIXI.Sprite.fromImage("img/jinli.png");
+        app.stage.addChild(jinli);
+        jinli.scale.x=0.03;
+        jinli.scale.y=0.03;
+        jinli.y=820;
+        jinli.x=150;
+        
+        var xiangyun = new PIXI.Sprite.fromImage("img/xiangyun.png");
+        app.stage.addChild(xiangyun);
+        xiangyun.scale.x=0.045;
+        xiangyun.scale.y=0.045;
+        xiangyun.y=830;
+        xiangyun.x=250;
+        
+        var xianhe = new PIXI.Sprite.fromImage("img/xianhe.png");
+        app.stage.addChild(xianhe);
+        xianhe.scale.x=0.045;
+        xianhe.scale.y=0.045;
+        xianhe.y=830;
+        xianhe.x=350;
+        
+        
+        
+    </script>	
+	</body>
+</html>
+
+
+<div class="wenyang">
+		<div class="jl"><img src="img/jinli.png" width="120" ></div>
+		<div class="hua"><img src="img/hua.png" width="150" ></div>
+		<div class="xh"><img src="img/xianhe.png" width="150" ></div>
+		<div class="xy"><img src="img/xiangyun.png" width="150" ></div>
+		</div>
